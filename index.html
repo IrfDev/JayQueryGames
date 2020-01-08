@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="ico" type="image/png" href="./assets/logo-jay.png">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>JayQuery Games</title>
+</head>
+
+<body>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark fixed-top" data-aos="zoom-out-down">
+        <a class="navbar-brand">
+            <img src="./assets/logo-jay.png" alt="">
+        </a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#roulette">Roulette</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#debugger">Debugger</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="landing" class="active container-fluid">
+        <div class="hero row">
+            <div class="text col-md-5 col-12">
+                <h1>JayQuery <span data-aos="fade-up-right" data-aos-duration="1500">Games</span></h1>
+                <h2>Try something new with the funniest JQuery games</h2>
+                <a href="#cta-play">
+                    <button>
+                        Play now!
+                        </button>
+                </a>
+            </div>
+            <div class="image col-md-7 col-12">
+                <img src="./assets/chat-cloud.png" data-aos="fade-up-left" data-aos-duration="3000" alt="" class="img-fluid chat-jay">
+                <img src="./assets/hero-game.png" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="900">
+            </div>
+        </div>
+        <div class="row">
+            <div class="feature-blurbs">
+                <div class="col">
+                    <div class="blurb" data-aos="fade-down">
+                        <i class="fas fa-bolt"></i>
+                        <p>Lightweight mini games</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="blurb" data-aos="fade-up">
+                        <i class="fas fa-bomb"></i>
+                        <p>Explosives as a bomb</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="blurb" data-aos="fade-down">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p>Addictive game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cta-landing" id="cta-play">
+            <div class="col-md-7 col-12 image-cta" data-aos="zoom-in-right" data-aos-duration="1500">
+                <img src="./assets/cta-illustration.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-5 col-12 text-cta" data-aos="zoom-in-left">
+                <h1>Just Play!</h1>
+                <button class="principal">
+                    Debugger
+                </button>
+                <button class="secondary mt-3">
+                    Roulette
+                </button>
+            </div>
+        </div>
+    </main>
+    <main id="roulette">
+        <div class="container">
+            <div class="row">
+                <div class="col instructions">
+                    <h1 class="mt-3 text-center">
+                        Welcome to the roulette
+                    </h1>
+                    <p>
+                        You just have to start/stop the roulette and match the cartoons with his corresponding head/body/foot parts, all the attempts are random's just try.
+                    </p>
+                    <div class="score">
+                        <h2>
+                            Score:150
+                        </h2>
+                    </div>
+                    <button id="startHeads" class="btn btn-primary " type="button">
+                        Spin
+                        <i class="fas fa-hat-cowboy"></i>
+                    </button>
+                    <button id="startTorsos" class="btn btn-primary " type="button">
+                        Spin
+                        <i class="fas fa-tshirt"></i>
+                    </button>
+                    <button id="startLegs" class="btn btn-primary " type="button">
+                        Spin
+                        <i class="fas fa-socks"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="carousels mt-3">
+
+                <div id="headsCarousel" class="carousel slide heads" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div id="head-1" class="carousel-item head">
+                            <img class="img-fluid " src="./assets/head-1.png" alt="">
+                        </div>
+                        <div id="head-2" class="carousel-item head">
+                            <img class="img-fluid " src="./assets/head-2.png" alt="">
+                        </div>
+                        <div id="head-3" class="carousel-item head">
+                            <img class="img-fluid " src="./assets/head-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel slide torsos" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item torso">
+                            <img class="img-fluid" src="./assets/torso-1.png" alt="">
+                        </div>
+                        <div class="carousel-item torso">
+                            <img class="img-fluid" src="./assets/torso-2.png" alt="">
+                        </div>
+                        <div class="carousel-item torso">
+                            <img class="img-fluid" src="./assets/torso-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel slide legs" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item leg">
+                            <img class="img-fluid" src="./assets/leg-1.png" alt="">
+                        </div>
+                        <div class="carousel-item leg">
+                            <img class="img-fluid" src="./assets/leg-2.png" alt="">
+                        </div>
+                        <div class="carousel-item leg">
+                            <img class="img-fluid" src="./assets/leg-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main id="debugger">
+        <div class="instructions">
+            <h1 class="welcome">Welcome to debugger</h1>
+            <h2 class="welcome">Smash all the bugs you can</h2>
+            <p class="welcome"> Just choose the difficulty and then click on each bug as they come from his holes</p>
+            <div class="set-game welcome">
+                <label for="difficulty">Pick the difficulty</label>
+                <input type="range" class="custom-range" min="1" max="5" id="difficulty">
+                <p class="level">Hard<i class="fas fa-arrow-left"></i>Medium<i class="fas fa-arrow-right"></i> Easy</p>
+                <button id="startDebugger">
+                Start
+                 </button>
+            </div>
+            <div>
+                <h2 class="score"></h2>
+            </div>
+        </div>
+        <div class="game container-fluid">
+            <div class="row mb-3">
+                <div class="col-md-4 col-6">
+                    <div class=" hole hole1">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class=" hole hole2">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class=" hole hole3">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-6">
+                    <div class=" hole hole4">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class=" hole hole5">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="hole hole6">
+                        <div class="bug">
+                            <img class="img-fluid" src="./assets/bug-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/767b73986e.js" crossorigin="anonymous"></script>
+    <!-- General Javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/debugger.js"></script>
+    <script src="./js/roulette.js"></script>
+</body>
+
+</html>

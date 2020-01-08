@@ -1,0 +1,22 @@
+{
+    "name": "exercises-js",
+    "version": "1.0.0",
+    "description": "This is just some example code for exercise my js",
+    "main": "index.js",
+    "scripts": {
+        "test": "dev",
+        "server": "lite-server"
+    },
+    "keywords": [
+        "JS",
+        "NODEJS",
+        "EVENTS"
+    ],
+    "author": "IrfDev",
+    "license": "ISC",
+    "dependencies": {
+        "lite-server": "^2.5.4",
+        "node": "^13.1.0",
+        "nodemon": "^1.19.4"
+    }
+}
